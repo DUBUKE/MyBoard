@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 슬라이드 쇼 컨테이너 */
+.slideshow {
+  width: px;
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  height: 400px;
+}
+
+
+/* 이미지 숨기기 */
+.adv {
+  display: none;
+}
+
+/* Next, Previous  버튼 */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+}
+
+/* Dots */
+.indicators {
+  display: block;
+}
+
+.dot {
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  margin: 0 1px;
+  background-color: #bbb 0.5;
+  display: inline-block;
+}
+
+.active,
+.dot:hover {
+  background-color: white;
+}
+
+.adv {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes .adv {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
